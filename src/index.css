@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --color-silphor-navy: #0B2545;
+  --color-silphor-navy-dark: #07172C;
+  --color-silphor-teal: #00828A;
+  --color-silphor-cyan: #0D9488;
+  --color-intel-orange: #FF6B00;
+  --color-intel-orange-dark: #EA580C;
+  --color-intel-blue: #0284C7;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #F8FAFC;
+  color: #0F172A;
+  -webkit-font-smoothing: antialiased;
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  body {
+    background: white;
+    color: black;
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Silphor Technologies Study Hub",
+  "description": "Educational study notes, concept summaries, and interactive revision dashboard for Silphor Technologies VLSI, Verification, PCB, Embedded, and Power Electronics engineering tracks.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
