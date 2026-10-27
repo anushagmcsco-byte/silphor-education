@@ -18,6 +18,8 @@ export const CoursesPage: React.FC<CoursesPageProps> = ({ onEnrollCourse, select
     { id: 'PCB & Signal Integrity', label: 'PCB & Signal Integrity' },
     { id: 'Embedded & IoT', label: 'Embedded & IoT' },
     { id: 'Power Electronics', label: 'Power Electronics' },
+    { id: 'FDP & SDP Programs', label: 'FDP & SDP University Programs' },
+    { id: 'Industrial Internships', label: 'Internships & Capstone Projects' },
   ];
 
   const filteredCourses = SILPHOR_COURSES_DATA.filter(

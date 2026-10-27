@@ -7,7 +7,7 @@ export interface Course {
   id: string;
   trackCode: string;
   title: string;
-  category: 'VLSI & Physical Design' | 'RTL & UVM Verification' | 'PCB & Signal Integrity' | 'Embedded & IoT' | 'Power Electronics';
+  category: 'VLSI & Physical Design' | 'RTL & UVM Verification' | 'PCB & Signal Integrity' | 'Embedded & IoT' | 'Power Electronics' | 'FDP & SDP Programs' | 'Industrial Internships';
   shortDesc: string;
   fullDesc: string;
   duration: string;
@@ -285,6 +285,102 @@ export const SILPHOR_COURSES_DATA: Course[] = [
         seatsTotal: 20,
         seatsFilled: 12,
         trainer: 'Dr. Anand Verma (Power Systems Consultant)'
+      }
+    ]
+  },
+  {
+    id: 'fdp-sdp',
+    trackCode: 'SIL-ACAD-06',
+    title: 'FDP & SDP Programs: Semiconductor & EDA Enablement',
+    category: 'FDP & SDP Programs',
+    shortDesc: 'Faculty & Student Development workshops for engineering colleges and universities on Synopsys, Cadence, and ASIC workflows.',
+    fullDesc: 'Tailored institutional programs for universities and engineering colleges across Karnataka and India. Focuses on faculty upskilling, modernized semiconductor curricula, cloud-based EDA tool licensing setups, and student hands-on bootcamps.',
+    duration: '2 to 4 Weeks (Modular)',
+    mode: 'Hybrid (Lab + Online)',
+    level: 'Intermediate',
+    feeINR: 15000,
+    featured: false,
+    tools: ['Synopsys Design Compiler', 'Cadence Innovus', 'Xilinx Vivado', 'Altium Designer'],
+    highlights: [
+      'Empower faculty to teach modern RTL-to-GDSII and FPGA design',
+      'AICTE / VTU / Autonomous university curriculum alignment',
+      'Setup guidelines for institutional EDA simulation laboratories',
+      'Direct industry certification for participating professors and scholars'
+    ],
+    syllabus: [
+      {
+        phase: 'Module 1',
+        title: 'Modern Semiconductor Landscape & Curriculum Framework',
+        topics: ['Sub-14nm FinFET technology nodes overview', 'Bridging syllabus gap with tier-1 foundry standards', 'Open-source and commercial EDA tool comparison']
+      },
+      {
+        phase: 'Module 2',
+        title: 'Hands-on Digital IC Design & Synthesis Labs',
+        topics: ['Synthesizable Verilog & CDC best practices', 'Setting up constraint SDC files in university labs', 'Static Timing Analysis (STA) conceptual labs']
+      },
+      {
+        phase: 'Module 3',
+        title: 'FPGA Emulation & Post-Silicon Validation Labs',
+        topics: ['Xilinx Vivado hardware testbenches', 'Logic analyzer and oscilloscope probing techniques', 'Designing industry-ready student capstone projects']
+      }
+    ],
+    batches: [
+      {
+        id: 'b-fdp-1',
+        name: 'Winter Academic Cohort 2026',
+        startDate: 'December 10, 2026',
+        timing: 'Mon-Fri 2:00 PM - 5:00 PM IST',
+        seatsTotal: 40,
+        seatsFilled: 28,
+        trainer: 'Academic Director & Senior EDA Specialist'
+      }
+    ]
+  },
+  {
+    id: 'internship-capstone',
+    trackCode: 'SIL-PROJ-07',
+    title: 'Industrial Internships & Capstone Tape-out Projects',
+    category: 'Industrial Internships',
+    shortDesc: '3 to 6-month hands-on silicon & board design internships with Multi-Project Wafer (MPW) and FPGA emulator projects.',
+    fullDesc: 'Intensive internship and capstone program with online screening test. Work inside dedicated project pods on live MPW tape-out designs, high-speed DDR/PCIe board bring-up, or UVM protocol VIP creation with mentor reviews.',
+    duration: '16 to 24 Weeks (4 to 6 Months)',
+    mode: 'Classroom Lab',
+    level: 'Advanced',
+    feeINR: 25000,
+    featured: true,
+    tools: ['Synopsys IC Compiler II', 'Siemens Calibre', 'Xilinx UltraScale+', 'HyperLynx SI'],
+    highlights: [
+      'Multi-Project Wafer (MPW) tape-out submission experience',
+      'Dedicated hardware lab access at Malleswaram center',
+      'Direct technical mentorship and weekly code/layout reviews',
+      'FastTrack campus placement interviews with tier-1 silicon MNCs'
+    ],
+    syllabus: [
+      {
+        phase: 'Phase 1 (Month 1)',
+        title: 'Screening, Architecture Specification & Netlist Generation',
+        topics: ['Technical entrance screening & pod assignment', 'Architecture micro-spec and RTL coding', 'Constraint budgeting (SDC) & linting signoff']
+      },
+      {
+        phase: 'Phase 2 (Months 2-3)',
+        title: 'Implementation & Verification Sprint',
+        topics: ['Synthesizable IP design & UVM testbench verification', 'Floorplanning, power mesh & CTS implementation', 'Timing ECOs & multi-corner slack closure']
+      },
+      {
+        phase: 'Phase 3 (Months 4-6)',
+        title: 'Signoff, FPGA Emulation & Tape-out Delivery',
+        topics: ['Siemens Calibre DRC/LVS clean signoff', 'Bitstream generation & FPGA in-circuit emulation', 'MPW GDSII tape-out submission & internship defense']
+      }
+    ],
+    batches: [
+      {
+        id: 'b-intern-1',
+        name: 'Spring 2027 Project Pod',
+        startDate: 'January 05, 2027',
+        timing: 'Full-time Lab (Mon-Fri 9:30 AM - 5:30 PM IST)',
+        seatsTotal: 15,
+        seatsFilled: 9,
+        trainer: 'Lead Silicon Architect & Project Director'
       }
     ]
   }
